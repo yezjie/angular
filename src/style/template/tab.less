@@ -1,0 +1,16 @@
+.tab{
+  position: fixed;
+  .p-top(40);
+  background: @tabBgColor;
+  font-size: 0;
+  width: 100%;
+  li{
+    .fs(14);
+    width: 33.3%;
+    .lh(40);
+    border-bottom: 2px solid @tabBgColor;
+    &.active{
+      border-color: @headBgColor;
+    }
+  }
+}

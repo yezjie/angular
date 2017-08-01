@@ -1,0 +1,32 @@
+.me{
+  img{
+    .w(70);
+    .h(70);
+    border-radius: 50%;
+    .mt(80);
+    .mb(30);
+  }
+  p{
+    .mb(40);
+  }
+  button{
+    .w(165);
+    .h(80);
+    .fs(18);
+    background: @headBgColor;
+    outline: none;
+    border:none;
+    color: @defaultColor;
+    .ml(5);
+    .mr(5);
+    &:last-of-type{
+      .mt(15);
+      .h(40);
+      .w(345);
+      background: red;
+    }
+    &.logbtn{
+      background: @headBgColor;
+    }
+  }
+}

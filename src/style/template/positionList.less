@@ -1,0 +1,35 @@
+.position-list{
+  margin:0;
+  background: @defaultColor;
+  overflow: hidden;
+  .item{
+    padding:7px 3px;
+    list-style: none;
+    border-bottom: 1px solid @lineClolr;
+    .logo{
+      .w(70);
+      .h(70);
+      margin-right:13px;
+      margin-left:4px;
+    }
+    .text{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .icon{
+      background-repeat:no-repeat;
+      background-size:100%;
+      .w(30);
+      .h(28);
+      right:10px;
+      .p-top(4);
+      &.star{
+        background-image: url("../image/star.png");
+      }
+      &.star-active{
+        background-image: url("../image/star-active.png");
+      }
+    }
+  }
+}
